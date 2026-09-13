@@ -1,18 +1,31 @@
-# Anjum Portfolio Website
+# 🌐 Anjum Patel — Portfolio
 
-A responsive personal portfolio website built using HTML, CSS and JavaScript.
+Welcome to my personal portfolio website.
 
-## Technologies Used
-- HTML5
-- CSS3
-- Responsive Design
+I am a Computer Science Engineering student and aspiring **Software Developer**, passionate about building modern and scalable applications.
 
-## Features
-- Modern UI Design
-- About Section
-- Skills Section
-- Projects Section
-- Contact Section
+## 🛠️ Skills
 
-## Live Demo
+* Java
+* Spring Boot
+* React.js
+* SQL & PostgreSQL
+* REST APIs
+* Microservices
+* Git & GitHub
+* Docker
+* AWS
+
+## 🌐 Live Portfolio
+
 https://anjumpatel725-boop.github.io/portfolio_website/
+
+## 📫 GitHub
+
+https://github.com/anjumpatel725-boop
+
+---
+
+⭐ Thanks for visiting my portfolio!
+
+© 2026 Anjum Patel
