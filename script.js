@@ -4,14 +4,24 @@
 
 const themeToggle = document.getElementById("themeToggle");
 
+
+/* =========================================
+   UPDATE THEME ICON
+========================================= */
+
 function updateThemeIcon() {
 
     if (!themeToggle) return;
 
     const icon = themeToggle.querySelector("i");
 
+    if (!icon) return;
+
     const currentTheme =
         document.documentElement.getAttribute("data-theme") || "dark";
+
+
+    /* LIGHT MODE */
 
     if (currentTheme === "light") {
 
@@ -28,7 +38,12 @@ function updateThemeIcon() {
             "Dark mode"
         );
 
-    } else {
+    }
+
+
+    /* DARK MODE */
+
+    else {
 
         icon.classList.remove("fa-moon");
         icon.classList.add("fa-sun");
@@ -42,78 +57,154 @@ function updateThemeIcon() {
             "title",
             "Light mode"
         );
+
     }
+
 }
 
 
-/* Load saved theme */
+/* =========================================
+   LOAD SAVED THEME
+========================================= */
+
 const currentSavedTheme =
     localStorage.getItem("theme") || "dark";
 
-document.documentElement.setAttribute(
-    "data-theme",
-    currentSavedTheme
-);
+
+if (currentSavedTheme === "light") {
+
+    document.documentElement.setAttribute(
+        "data-theme",
+        "light"
+    );
+
+} else {
+
+    document.documentElement.removeAttribute(
+        "data-theme"
+    );
+
+}
+
 
 updateThemeIcon();
 
 
-/* Toggle theme */
+/* =========================================
+   TOGGLE THEME
+========================================= */
+
 if (themeToggle) {
 
-    themeToggle.addEventListener("click", function () {
+    themeToggle.addEventListener("click", () => {
 
         const currentTheme =
-            document.documentElement.getAttribute("data-theme");
+            document.documentElement.getAttribute(
+                "data-theme"
+            );
 
         const newTheme =
             currentTheme === "light"
                 ? "dark"
                 : "light";
 
-        document.documentElement.setAttribute(
-            "data-theme",
-            newTheme
-        );
+
+        if (newTheme === "light") {
+
+            document.documentElement.setAttribute(
+                "data-theme",
+                "light"
+            );
+
+        } else {
+
+            document.documentElement.removeAttribute(
+                "data-theme"
+            );
+
+        }
+
 
         localStorage.setItem(
             "theme",
             newTheme
         );
 
+
         updateThemeIcon();
 
     });
 
 }
+
+
 /* =========================================
    MOBILE MENU
 ========================================= */
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+const menuToggle =
+    document.getElementById("menuToggle");
 
-menuToggle.addEventListener("click", () => {
+const navLinks =
+    document.getElementById("navLinks");
 
-    navLinks.classList.toggle("active");
 
-    const icon = menuToggle.querySelector("i");
+if (menuToggle && navLinks) {
 
-    if (navLinks.classList.contains("active")) {
+    menuToggle.addEventListener("click", () => {
 
-        icon.classList.remove("fa-bars");
+        navLinks.classList.toggle("active");
 
-        icon.classList.add("fa-xmark");
 
-    } else {
+        const icon =
+            menuToggle.querySelector("i");
 
-        icon.classList.remove("fa-xmark");
 
-        icon.classList.add("fa-bars");
+        if (!icon) return;
 
-    }
 
-});
+        /* MENU OPEN */
+
+        if (navLinks.classList.contains("active")) {
+
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Close menu"
+            );
+
+            menuToggle.setAttribute(
+                "title",
+                "Close menu"
+            );
+
+        }
+
+
+        /* MENU CLOSED */
+
+        else {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open menu"
+            );
+
+            menuToggle.setAttribute(
+                "title",
+                "Open menu"
+            );
+
+        }
+
+    });
+
+}
 
 
 /* =========================================
@@ -123,18 +214,37 @@ menuToggle.addEventListener("click", () => {
 const navigationItems =
     document.querySelectorAll(".nav-links a");
 
+
 navigationItems.forEach((link) => {
 
     link.addEventListener("click", () => {
 
+        if (!navLinks || !menuToggle) return;
+
+
         navLinks.classList.remove("active");
+
 
         const icon =
             menuToggle.querySelector("i");
 
-        icon.classList.remove("fa-xmark");
 
+        if (!icon) return;
+
+
+        icon.classList.remove("fa-xmark");
         icon.classList.add("fa-bars");
+
+
+        menuToggle.setAttribute(
+            "aria-label",
+            "Open menu"
+        );
+
+        menuToggle.setAttribute(
+            "title",
+            "Open menu"
+        );
 
     });
 
@@ -149,34 +259,57 @@ const revealElements =
     document.querySelectorAll(".reveal");
 
 
-const revealObserver =
-    new IntersectionObserver(
-        (entries, observer) => {
+if ("IntersectionObserver" in window) {
 
-            entries.forEach((entry) => {
+    const revealObserver =
+        new IntersectionObserver(
+            (entries, observer) => {
 
-                if (entry.isIntersecting) {
+                entries.forEach((entry) => {
 
-                    entry.target.classList.add("active");
+                    if (entry.isIntersecting) {
 
-                    observer.unobserve(entry.target);
+                        entry.target.classList.add(
+                            "active"
+                        );
 
-                }
+                        observer.unobserve(
+                            entry.target
+                        );
 
-            });
+                    }
 
-        },
-        {
-            threshold: 0.12
-        }
-    );
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
 
 
-revealElements.forEach((element) => {
+    revealElements.forEach((element) => {
 
-    revealObserver.observe(element);
+        revealObserver.observe(element);
 
-});
+    });
+
+}
+
+
+/* =========================================
+   FALLBACK FOR OLD BROWSERS
+========================================= */
+
+else {
+
+    revealElements.forEach((element) => {
+
+        element.classList.add("active");
+
+    });
+
+}
 
 
 /* =========================================
@@ -187,29 +320,37 @@ const backToTop =
     document.getElementById("backToTop");
 
 
-window.addEventListener("scroll", () => {
+if (backToTop) {
 
-    if (window.scrollY > 500) {
+    /* SHOW / HIDE BUTTON */
 
-        backToTop.classList.add("show");
+    window.addEventListener("scroll", () => {
 
-    } else {
+        if (window.scrollY > 500) {
 
-        backToTop.classList.remove("show");
+            backToTop.classList.add("show");
 
-    }
+        } else {
 
-});
+            backToTop.classList.remove("show");
 
+        }
 
-backToTop.addEventListener("click", () => {
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
     });
 
-});
+
+    /* SCROLL TO TOP */
+
+    backToTop.addEventListener("click", () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
 
 
 /* =========================================
@@ -219,50 +360,151 @@ backToTop.addEventListener("click", () => {
 const sections =
     document.querySelectorAll("section[id]");
 
-
 const navItems =
     document.querySelectorAll(".nav-links a");
 
 
-window.addEventListener("scroll", () => {
+if (
+    sections.length > 0 &&
+    navItems.length > 0
+) {
 
-    let currentSection = "";
+    window.addEventListener("scroll", () => {
 
-    sections.forEach((section) => {
+        let currentSection = "";
 
-        const sectionTop =
-            section.offsetTop - 150;
 
-        const sectionHeight =
-            section.offsetHeight;
+        sections.forEach((section) => {
 
-        if (
-            window.scrollY >= sectionTop &&
-            window.scrollY <
+            const sectionTop =
+                section.offsetTop - 150;
+
+            const sectionHeight =
+                section.offsetHeight;
+
+
+            if (
+                window.scrollY >= sectionTop &&
+                window.scrollY <
                 sectionTop + sectionHeight
-        ) {
+            ) {
 
-            currentSection =
-                section.getAttribute("id");
+                currentSection =
+                    section.getAttribute("id");
 
-        }
+            }
+
+        });
+
+
+        navItems.forEach((link) => {
+
+            link.classList.remove("active");
+
+
+            if (
+                link.getAttribute("href") ===
+                `#${currentSection}`
+            ) {
+
+                link.classList.add("active");
+
+            }
+
+        });
 
     });
 
+}
 
-    navItems.forEach((link) => {
 
-        link.classList.remove("active");
+/* =========================================
+   ACTIVE NAVIGATION STYLE
+========================================= */
+
+const activeNavStyle =
+    document.createElement("style");
+
+
+activeNavStyle.textContent = `
+
+    .nav-links a.active {
+        color: var(--primary);
+    }
+
+    .nav-links a.active::after {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+
+        .nav-links a.active::after {
+            display: none;
+        }
+
+        .nav-links a.active {
+            background: rgba(0, 229, 255, 0.05);
+            color: var(--primary);
+        }
+
+    }
+
+`;
+
+
+document.head.appendChild(activeNavStyle);
+
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+========================================= */
+
+document.addEventListener("keydown", (event) => {
+
+    if (event.key === "Escape") {
 
         if (
-            link.getAttribute("href") ===
-            `#${currentSection}`
+            navLinks &&
+            menuToggle &&
+            navLinks.classList.contains("active")
         ) {
 
-            link.classList.add("active");
+            navLinks.classList.remove("active");
+
+
+            const icon =
+                menuToggle.querySelector("i");
+
+
+            if (icon) {
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+            }
+
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open menu"
+            );
+
+            menuToggle.setAttribute(
+                "title",
+                "Open menu"
+            );
 
         }
 
-    });
+    }
 
 });
+
+
+/* =========================================
+   PAGE LOADED
+========================================= */
+
+document.documentElement.classList.add(
+    "js-loaded"
+);
