@@ -1,4 +1,92 @@
 /* =========================================
+   DARK / LIGHT MODE
+========================================= */
+
+const themeToggle = document.getElementById("themeToggle");
+
+function updateThemeIcon() {
+
+    if (!themeToggle) return;
+
+    const icon = themeToggle.querySelector("i");
+
+    const currentTheme =
+        document.documentElement.getAttribute("data-theme") || "dark";
+
+    if (currentTheme === "light") {
+
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+
+        themeToggle.setAttribute(
+            "aria-label",
+            "Switch to dark mode"
+        );
+
+        themeToggle.setAttribute(
+            "title",
+            "Dark mode"
+        );
+
+    } else {
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
+        themeToggle.setAttribute(
+            "aria-label",
+            "Switch to light mode"
+        );
+
+        themeToggle.setAttribute(
+            "title",
+            "Light mode"
+        );
+    }
+}
+
+
+/* Load saved theme */
+const currentSavedTheme =
+    localStorage.getItem("theme") || "dark";
+
+document.documentElement.setAttribute(
+    "data-theme",
+    currentSavedTheme
+);
+
+updateThemeIcon();
+
+
+/* Toggle theme */
+if (themeToggle) {
+
+    themeToggle.addEventListener("click", function () {
+
+        const currentTheme =
+            document.documentElement.getAttribute("data-theme");
+
+        const newTheme =
+            currentTheme === "light"
+                ? "dark"
+                : "light";
+
+        document.documentElement.setAttribute(
+            "data-theme",
+            newTheme
+        );
+
+        localStorage.setItem(
+            "theme",
+            newTheme
+        );
+
+        updateThemeIcon();
+
+    });
+
+}
+/* =========================================
    MOBILE MENU
 ========================================= */
 
