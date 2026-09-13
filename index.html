@@ -1,1552 +1,182 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Anjum Patel - Aspiring Software Engineer and Java Full Stack Developer Portfolio">
+<meta name="description"
+    content="Anjum Patel - Aspiring Software Engineer and Java Full Stack Developer Portfolio">
 
-    <meta name="author"
-        content="Anjum Patel">
+<meta name="author" content="Anjum Patel">
 
-    <title>Anjum Patel | Java Full Stack Developer</title>
+<title>Anjum Patel | Java Full Stack Developer</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-    <!-- Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Font Awesome -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
-
 
 <body>
 
+```
+<!-- =========================
+     NAVBAR
+========================== -->
+
+<header class="header">
+
+    <nav class="navbar container">
+
+        <a href="#home" class="logo">
+            Anjum<span>.dev</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#internship">Internship</a>
+            </li>
+
+            <li>
+                <a href="#certifications">Certifications</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
     <!-- =========================
-         NAVBAR
+         HERO
     ========================== -->
 
-    <header class="header">
+    <section id="home" class="hero">
 
-        <nav class="navbar container">
+        <div class="hero-bg"></div>
 
-            <a href="#home" class="logo">
-                Anjum<span>.dev</span>
-            </a>
+        <div class="container hero-container">
 
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Open navigation menu">
+            <div class="hero-content reveal">
 
-                <i class="fa-solid fa-bars"></i>
+                <p class="hero-small">
+                    Hello, I'm
+                </p>
 
-            </button>
+                <h1>
+                    Anjum <span>Patel</span>
+                </h1>
 
+                <h2>
+                    Aspiring Software Engineer
+                </h2>
 
-            <ul class="nav-links" id="navLinks">
+                <p class="hero-role">
+                    Java Full Stack Developer
+                </p>
 
-                <li>
-                    <a href="#home">Home</a>
-                </li>
+                <p class="hero-description">
+                    B.Tech Computer Science Engineering student
+                    passionate about building scalable applications
+                    using Java, Spring Boot, React.js, REST APIs
+                    and modern software development technologies.
+                </p>
 
-                <li>
-                    <a href="#about">About</a>
-                </li>
+                <div class="hero-buttons">
 
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#education">Education</a>
-                </li>
-
-                <li>
-                    <a href="#internship">Internship</a>
-                </li>
-
-                <li>
-                    <a href="#certifications">Certifications</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-
-    <main>
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
-        <section id="home" class="hero">
-
-            <div class="hero-bg"></div>
-
-            <div class="container hero-container">
-
-                <div class="hero-content reveal">
-
-                    <p class="hero-small">
-                        Hello, I'm
-                    </p>
-
-                    <h1>
-                        Anjum <span>Patel</span>
-                    </h1>
-
-                    <h2>
-                        Aspiring Software Engineer
-                    </h2>
-
-                    <p class="hero-role">
-                        Java Full Stack Developer
-                    </p>
-
-                    <p class="hero-description">
-
-                        B.Tech Computer Science Engineering student
-                        passionate about building scalable applications
-                        using Java, Spring Boot, React.js, REST APIs
-                        and modern software development technologies.
-
-                    </p>
-
-
-                    <div class="hero-buttons">
-
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fa-solid fa-code"></i>
-                            View Projects
-                        </a>
-
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="fa-solid fa-envelope"></i>
-                            Contact Me
-                        </a>
-
-                    </div>
-
-
-                    <div class="social-links">
-
-                        <a
-                            href="https://github.com/anjumpatel725-boop"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="GitHub">
-
-                            <i class="fa-brands fa-github"></i>
-
-                        </a>
-
-
-                        <a
-                            href="https://www.linkedin.com/in/anjum-patel-8817b736b"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="LinkedIn">
-
-                            <i class="fa-brands fa-linkedin"></i>
-
-                        </a>
-
-
-                        <a
-                            href="mailto:anjumpatel725@gmail.com"
-                            aria-label="Email">
-
-                            <i class="fa-solid fa-envelope"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Profile -->
-
-                <div class="hero-profile reveal">
-
-                    <div class="profile-glow"></div>
-
-                    <div class="profile-circle">
-
-                        <img
-                            src="profile.jpg"
-                            alt="Anjum Patel">
-
-                    </div>
-
-
-                    <div class="floating-card card-one">
-
-                        <i class="fa-brands fa-java"></i>
-
-                        <span>Java</span>
-
-                    </div>
-
-
-                    <div class="floating-card card-two">
-
-                        <i class="fa-solid fa-leaf"></i>
-
-                        <span>Spring Boot</span>
-
-                    </div>
-
-
-                    <div class="floating-card card-three">
-
-                        <i class="fa-brands fa-react"></i>
-
-                        <span>React</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section id="about" class="section">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        GET TO KNOW ME
-                    </p>
-
-                    <h2>
-                        About <span>Me</span>
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-text reveal">
-
-                        <h3>
-                            Passionate About Building Software
-                        </h3>
-
-                        <p>
-
-                            I am a passionate B.Tech Computer Science
-                            Engineering student with strong knowledge
-                            of Java, Spring Boot, React.js, SQL and
-                            Data Structures & Algorithms.
-
-                        </p>
-
-                        <p>
-
-                            I enjoy developing full-stack and backend
-                            applications using REST APIs, databases
-                            and modern software development practices.
-
-                        </p>
-
-                        <p>
-
-                            My goal is to start my career as a Software
-                            Engineer or Java Developer and contribute
-                            to real-world technology products.
-
-                        </p>
-
-
-                        <div class="about-stats">
-
-                            <div class="stat">
-
-                                <strong>2028</strong>
-
-                                <span>B.Tech Graduation</span>
-
-                            </div>
-
-
-                            <div class="stat">
-
-                                <strong>Java</strong>
-
-                                <span>Primary Backend</span>
-
-                            </div>
-
-
-                            <div class="stat">
-
-                                <strong>Full Stack</strong>
-
-                                <span>Development Focus</span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="about-box reveal">
-
-                        <div class="about-icon">
-
-                            <i class="fa-solid fa-laptop-code"></i>
-
-                        </div>
-
-                        <h3>
-                            What I Do
-                        </h3>
-
-                        <ul>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Java Backend Development
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Spring Boot REST APIs
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                React.js Frontend Development
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Database Integration
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Full Stack Applications
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Problem Solving & DSA
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SKILLS
-        ========================== -->
-
-        <section id="skills" class="section section-dark">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        MY EXPERTISE
-                    </p>
-
-                    <h2>
-                        Technical <span>Skills</span>
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                </div>
-
-
-                <div class="skills-grid">
-
-                    <!-- Programming -->
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-
-                        <h3>
-                            Programming
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>C</span>
-                            <span>C++</span>
-                            <span>Java</span>
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>SQL</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Frontend -->
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            <i class="fa-brands fa-react"></i>
-                        </div>
-
-                        <h3>
-                            Frontend
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>React.js</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JSX</span>
-                            <span>Vite</span>
-                            <span>Responsive UI</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Backend -->
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-server"></i>
-                        </div>
-
-                        <h3>
-                            Backend
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>REST API</span>
-                            <span>JPA</span>
-                            <span>Spring Security</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Database -->
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-database"></i>
-                        </div>
-
-                        <h3>
-                            Database
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>MySQL</span>
-                            <span>PostgreSQL</span>
-                            <span>SQL</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Tools -->
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-toolbox"></i>
-                        </div>
-
-                        <h3>
-                            Tools
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>VS Code</span>
-                            <span>Vite</span>
-                            <span>MATLAB</span>
-                            <span>Cisco Packet Tracer</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Concepts -->
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-icon">
-                            <i class="fa-solid fa-brain"></i>
-                        </div>
-
-                        <h3>
-                            Concepts
-                        </h3>
-
-                        <div class="skill-tags">
-
-                            <span>DSA</span>
-                            <span>OOP</span>
-                            <span>API Integration</span>
-                            <span>Computer Networks</span>
-                            <span>Operating Systems</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section id="projects" class="section">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        MY WORK
-                    </p>
-
-                    <h2>
-                        Featured <span>Projects</span>
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                    <p class="heading-description">
-                        A selection of projects demonstrating my
-                        development, problem-solving and technical skills.
-                    </p>
-
-                </div>
-
-
-                <div class="projects-grid">
-
-
-                    <!-- MAIN PROJECT -->
-
-                    <article class="project-card featured-project reveal">
-
-                        <div class="project-top">
-
-                            <div class="project-icon">
-                                <i class="fa-solid fa-network-wired"></i>
-                            </div>
-
-                            <span class="featured-label">
-                                Featured Project
-                            </span>
-
-                        </div>
-
-
-                        <h3>
-                            Microservices-Based Social Media Platform
-                        </h3>
-
-
-                        <p>
-
-                            A scalable social media platform designed
-                            using a distributed microservices architecture.
-                            The application focuses on user management,
-                            posts, notifications, chat and analytics
-                            through independent services.
-
-                        </p>
-
-
-                        <div class="project-tags">
-
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>React.js</span>
-                            <span>Microservices</span>
-                            <span>PostgreSQL</span>
-                            <span>JWT</span>
-                            <span>Docker</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/anjumpatel725-boop"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                <i class="fa-brands fa-github"></i>
-                                GitHub
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ECOMMERCE -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-top">
-
-                            <div class="project-icon">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
-
-                        </div>
-
-
-                        <h3>
-                            E-Commerce Backend System
-                        </h3>
-
-
-                        <p>
-
-                            Backend application with shopping cart,
-                            order processing, product search and
-                            admin features using Spring Boot and
-                            PostgreSQL.
-
-                        </p>
-
-
-                        <div class="project-tags">
-
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>PostgreSQL</span>
-                            <span>Spring Security</span>
-                            <span>JPA</span>
-                            <span>REST API</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/anjumpatel725-boop"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                <i class="fa-brands fa-github"></i>
-                                GitHub
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- BUSINESS WEBSITE -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-top">
-
-                            <div class="project-icon">
-                                <i class="fa-solid fa-globe"></i>
-                            </div>
-
-                        </div>
-
-
-                        <h3>
-                            Business Website
-                        </h3>
-
-
-                        <p>
-
-                            Responsive business website designed
-                            with a modern user interface and
-                            mobile-friendly layout.
-
-                        </p>
-
-
-                        <div class="project-tags">
-
-                            <span>React.js</span>
-                            <span>CSS</span>
-                            <span>Vite</span>
-                            <span>Responsive Design</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/anjumpatel725-boop"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                <i class="fa-brands fa-github"></i>
-                                GitHub
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PORTFOLIO -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-top">
-
-                            <div class="project-icon">
-                                <i class="fa-solid fa-user-tie"></i>
-                            </div>
-
-                        </div>
-
-
-                        <h3>
-                            Portfolio Website
-                        </h3>
-
-
-                        <p>
-
-                            Personal developer portfolio showcasing
-                            technical skills, projects, education
-                            and professional experience.
-
-                        </p>
-
-
-                        <div class="project-tags">
-
-                            <span>React.js</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/anjumpatel725-boop"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                <i class="fa-brands fa-github"></i>
-                                GitHub
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- CURRENCY -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-top">
-
-                            <div class="project-icon">
-                                <i class="fa-solid fa-money-bill-transfer"></i>
-                            </div>
-
-                        </div>
-
-
-                        <h3>
-                            Currency Converter
-                        </h3>
-
-
-                        <p>
-
-                            Real-time currency conversion application
-                            using JavaScript and an external API.
-
-                        </p>
-
-
-                        <div class="project-tags">
-
-                            <span>JavaScript</span>
-                            <span>API</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/anjumpatel725-boop"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                <i class="fa-brands fa-github"></i>
-                                GitHub
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- MOOD MUSIC -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-top">
-
-                            <div class="project-icon">
-                                <i class="fa-solid fa-music"></i>
-                            </div>
-
-                        </div>
-
-
-                        <h3>
-                            Mood Music Suggestion Platform
-                        </h3>
-
-
-                        <p>
-
-                            Python-based application that suggests
-                            music recommendations based on the
-                            user's mood.
-
-                        </p>
-
-
-                        <div class="project-tags">
-
-                            <span>Python</span>
-                            <span>Recommendation</span>
-                            <span>Logic</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/anjumpatel725-boop"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                <i class="fa-brands fa-github"></i>
-                                GitHub
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- IOT -->
-
-                    <article class="project-card reveal">
-
-                        <div class="project-top">
-
-                            <div class="project-icon">
-                                <i class="fa-solid fa-car"></i>
-                            </div>
-
-                        </div>
-
-
-                        <h3>
-                            Self-Driving Car using IoT
-                        </h3>
-
-
-                        <p>
-
-                            Autonomous car project using Raspberry Pi
-                            and sensors to demonstrate IoT and
-                            embedded system concepts.
-
-                        </p>
-
-
-                        <div class="project-tags">
-
-                            <span>IoT</span>
-                            <span>Raspberry Pi</span>
-                            <span>Sensors</span>
-                            <span>Embedded Systems</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/anjumpatel725-boop"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                <i class="fa-brands fa-github"></i>
-                                GitHub
-
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             EDUCATION
-        ========================== -->
-
-        <section id="education" class="section section-dark">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        MY ACADEMIC JOURNEY
-                    </p>
-
-                    <h2>
-                        <span>Education</span>
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                </div>
-
-
-                <div class="timeline">
-
-
-                    <div class="timeline-item reveal">
-
-                        <div class="timeline-dot">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-
-
-                        <div class="timeline-content">
-
-                            <span class="timeline-date">
-                                Expected 2028
-                            </span>
-
-                            <h3>
-                                B.Tech Computer Science and Engineering
-                            </h3>
-
-                            <h4>
-                                Dr. Daulatrao Aher College of Engineering, Karad
-                            </h4>
-
-                            <p>
-                                Minor: Electronics & Telecommunication Engineering
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item reveal">
-
-                        <div class="timeline-dot">
-                            <i class="fa-solid fa-certificate"></i>
-                        </div>
-
-
-                        <div class="timeline-content">
-
-                            <span class="timeline-date">
-                                2025
-                            </span>
-
-                            <h3>
-                                Diploma in Electronics and Telecommunication Engineering
-                            </h3>
-
-                            <h4>
-                                Government Polytechnic Karad
-                            </h4>
-
-                            <p>
-                                Percentage: <strong>84.94%</strong>
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             INTERNSHIP
-        ========================== -->
-
-        <section id="internship" class="section">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        PROFESSIONAL EXPERIENCE
-                    </p>
-
-                    <h2>
-                        Intern<span>ships</span>
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                </div>
-
-
-                <div class="experience-grid">
-
-
-                    <article class="experience-card reveal">
-
-                        <div class="experience-header">
-
-                            <div class="experience-icon">
-                                <i class="fa-solid fa-laptop-code"></i>
-                            </div>
-
-                            <span>
-                                Jun 2026 – Present
-                            </span>
-
-                        </div>
-
-
-                        <h3>
-                            Full Stack Java Developer Intern
-                        </h3>
-
-                        <h4>
-                            The Developers Arena
-                        </h4>
-
-                        <p class="experience-location">
-                            <i class="fa-solid fa-location-dot"></i>
-                            Remote
-                        </p>
-
-
-                        <ul>
-
-                            <li>
-                                Enrolled in a 6-month self-paced
-                                internship focused on Full Stack
-                                Java Development.
-                            </li>
-
-                            <li>
-                                Learning frontend-backend integration,
-                                Java development and real-world
-                                development workflows.
-                            </li>
-
-                            <li>
-                                Completing technical assignments
-                                and project-based tasks.
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-                    <article class="experience-card reveal">
-
-                        <div class="experience-header">
-
-                            <div class="experience-icon">
-                                <i class="fa-solid fa-microchip"></i>
-                            </div>
-
-                            <span>
-                                Jun 2024 – Jul 2024
-                            </span>
-
-                        </div>
-
-
-                        <h3>
-                            IoT & Embedded Systems Intern
-                        </h3>
-
-                        <h4>
-                            Gajanan Batteries, Satara
-                        </h4>
-
-                        <p class="experience-location">
-                            <i class="fa-solid fa-location-dot"></i>
-                            Satara, Maharashtra
-                        </p>
-
-
-                        <ul>
-
-                            <li>
-                                Completed 6-week industrial training
-                                in IoT and Embedded Systems using Arduino.
-                            </li>
-
-                            <li>
-                                Worked with embedded hardware,
-                                sensors and IoT applications.
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CERTIFICATIONS
-        ========================== -->
-
-        <section id="certifications" class="section section-dark">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        CONTINUOUS LEARNING
-                    </p>
-
-                    <h2>
-                        Certifi<span>cations</span>
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                </div>
-
-
-                <div class="certifications-grid">
-
-
-                    <div class="cert-card reveal">
-
-                        <div class="cert-icon">
-                            <i class="fa-solid fa-robot"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Generative AI Fundamentals
-                            </h3>
-
-                            <p>
-                                IBM SkillsBuild
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="cert-card reveal">
-
-                        <div class="cert-icon">
-                            <i class="fa-solid fa-brain"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Artificial Intelligence Fundamentals
-                            </h3>
-
-                            <p>
-                                IBM SkillsBuild
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="cert-card reveal">
-
-                        <div class="cert-icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Software Engineering and Agile Software Development
-                            </h3>
-
-                            <p>
-                                Infosys Springboard
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="cert-card reveal">
-
-                        <div class="cert-icon">
-                            <i class="fa-solid fa-people-group"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Agile Scrum in Practice
-                            </h3>
-
-                            <p>
-                                Infosys Springboard
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="cert-card reveal">
-
-                        <div class="cert-icon">
-                            <i class="fa-solid fa-cloud"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Cloud Technologies
-                            </h3>
-
-                            <p>
-                                Infosys Springboard
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="cert-card reveal">
-
-                        <div class="cert-icon">
-                            <i class="fa-solid fa-cubes"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Object-Oriented Programming using Python
-                            </h3>
-
-                            <p>
-                                Infosys Springboard
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SOFT SKILLS
-        ========================== -->
-
-        <section class="section soft-section">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        BEYOND TECHNICAL SKILLS
-                    </p>
-
-                    <h2>
-                        Soft <span>Skills</span>
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                </div>
-
-
-                <div class="soft-skills reveal">
-
-                    <div>
-                        <i class="fa-solid fa-lightbulb"></i>
-                        Problem Solving
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-bolt"></i>
-                        Quick Learning
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-comments"></i>
-                        Communication
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                        Adaptability
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-people-group"></i>
-                        Teamwork
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section id="contact" class="section contact-section">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        LET'S CONNECT
-                    </p>
-
-                    <h2>
-                        Get In <span>Touch</span>
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                    <p class="heading-description">
-                        Looking for software development opportunities,
-                        internships and meaningful projects.
-                    </p>
-
-                </div>
-
-
-                <div class="contact-grid">
-
-
-                    <a
-                        href="mailto:anjumpatel725@gmail.com"
-                        class="contact-card reveal">
-
-                        <div class="contact-icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-
-                        <div>
-
-                            <span>Email</span>
-
-                            <strong>
-                                anjumpatel725@gmail.com
-                            </strong>
-
-                        </div>
-
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-code"></i>
+                        View Projects
                     </a>
 
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <div class="social-links">
 
                     <a
                         href="https://github.com/anjumpatel725-boop"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="contact-card reveal">
+                        aria-label="GitHub">
 
-                        <div class="contact-icon">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-
-                        <div>
-
-                            <span>GitHub</span>
-
-                            <strong>
-                                anjumpatel725-boop
-                            </strong>
-
-                        </div>
+                        <i class="fa-brands fa-github"></i>
 
                     </a>
-
 
                     <a
                         href="https://www.linkedin.com/in/anjum-patel-8817b736b"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="contact-card reveal">
+                        aria-label="LinkedIn">
 
-                        <div class="contact-icon">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </div>
-
-                        <div>
-
-                            <span>LinkedIn</span>
-
-                            <strong>
-                                Anjum Patel
-                            </strong>
-
-                        </div>
+                        <i class="fa-brands fa-linkedin"></i>
 
                     </a>
 
-                </div>
-
-
-                <div class="contact-cta reveal">
-
-                    <h3>
-                        Let's Build Something Great Together.
-                    </h3>
-
-                    <p>
-                        Open to software engineering internships,
-                        development opportunities and collaborative projects.
-                    </p>
-
-
                     <a
                         href="mailto:anjumpatel725@gmail.com"
-                        class="btn btn-primary">
+                        aria-label="Email">
 
-                        <i class="fa-solid fa-paper-plane"></i>
-                        Send Me an Email
+                        <i class="fa-solid fa-envelope"></i>
 
                     </a>
 
@@ -1554,44 +184,1289 @@
 
             </div>
 
-        </section>
 
-    </main>
+            <!-- Profile -->
+
+            <div class="hero-profile reveal">
+
+                <div class="profile-glow"></div>
+
+                <div class="profile-circle">
+
+                    <!-- GitHub file name is profile.jpeg -->
+                    <img
+                        src="profile.jpeg"
+                        alt="Anjum Patel">
+
+                </div>
+
+                <div class="floating-card card-one">
+
+                    <i class="fa-brands fa-java"></i>
+
+                    <span>Java</span>
+
+                </div>
+
+                <div class="floating-card card-two">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <span>Spring Boot</span>
+
+                </div>
+
+                <div class="floating-card card-three">
+
+                    <i class="fa-brands fa-react"></i>
+
+                    <span>React</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- =========================
-         FOOTER
+         ABOUT
     ========================== -->
 
-    <footer>
+    <section id="about" class="section">
 
-        <div class="container footer-content">
+        <div class="container">
 
-            <a href="#home" class="logo">
-                Anjum<span>.dev</span>
-            </a>
+            <div class="section-heading reveal">
 
-            <p>
-                © 2026 Anjum Patel. All Rights Reserved.
-            </p>
+                <p class="section-label">
+                    GET TO KNOW ME
+                </p>
 
-            <div class="footer-social">
+                <h2>
+                    About <span>Me</span>
+                </h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+
+                    <h3>
+                        Passionate About Building Software
+                    </h3>
+
+                    <p>
+                        I am a passionate B.Tech Computer Science
+                        Engineering student with strong knowledge
+                        of Java, Spring Boot, React.js, SQL and
+                        Data Structures & Algorithms.
+                    </p>
+
+                    <p>
+                        I enjoy developing full-stack and backend
+                        applications using REST APIs, databases
+                        and modern software development practices.
+                    </p>
+
+                    <p>
+                        My goal is to start my career as a Software
+                        Engineer or Java Developer and contribute
+                        to real-world technology products.
+                    </p>
+
+                    <div class="about-stats">
+
+                        <div class="stat">
+
+                            <strong>2028</strong>
+
+                            <span>B.Tech Graduation</span>
+
+                        </div>
+
+                        <div class="stat">
+
+                            <strong>Java</strong>
+
+                            <span>Primary Backend</span>
+
+                        </div>
+
+                        <div class="stat">
+
+                            <strong>Full Stack</strong>
+
+                            <span>Development Focus</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-box reveal">
+
+                    <div class="about-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h3>
+                        What I Do
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Java Backend Development
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Spring Boot REST APIs
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            React.js Frontend Development
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Database Integration
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Full Stack Applications
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Problem Solving & DSA
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+
+    <section id="skills" class="section section-dark">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    MY EXPERTISE
+                </p>
+
+                <h2>
+                    Technical <span>Skills</span>
+                </h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- Programming -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>SQL</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Frontend -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+
+                    <h3>
+                        Frontend
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>React.js</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JSX</span>
+                        <span>Vite</span>
+                        <span>Responsive UI</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Backend -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+
+                    <h3>
+                        Backend
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>REST API</span>
+                        <span>JPA</span>
+                        <span>Spring Security</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Database -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <h3>
+                        Database
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>SQL</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tools -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+
+                    <h3>
+                        Tools
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Vite</span>
+                        <span>MATLAB</span>
+                        <span>Cisco Packet Tracer</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Concepts -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <h3>
+                        Concepts
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>DSA</span>
+                        <span>OOP</span>
+                        <span>API Integration</span>
+                        <span>Computer Networks</span>
+                        <span>Operating Systems</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    MY WORK
+                </p>
+
+                <h2>
+                    Featured <span>Projects</span>
+                </h2>
+
+                <div class="heading-line"></div>
+
+                <p class="heading-description">
+                    A selection of projects demonstrating my
+                    development, problem-solving and technical skills.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <!-- MAIN PROJECT -->
+
+                <article class="project-card featured-project reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+
+                        <span class="featured-label">
+                            Featured Project
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Microservices-Based Social Media Platform
+                    </h3>
+
+                    <p>
+                        A scalable social media platform designed
+                        using a distributed microservices architecture.
+                        The application focuses on user management,
+                        posts, notifications, chat and analytics
+                        through independent services.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>React.js</span>
+                        <span>Microservices</span>
+                        <span>PostgreSQL</span>
+                        <span>JWT</span>
+                        <span>Docker</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/anjumpatel725-boop"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ECOMMERCE -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        E-Commerce Backend System
+                    </h3>
+
+                    <p>
+                        Backend application with shopping cart,
+                        order processing, product search and
+                        admin features using Spring Boot and
+                        PostgreSQL.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>PostgreSQL</span>
+                        <span>Spring Security</span>
+                        <span>JPA</span>
+                        <span>REST API</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/anjumpatel725-boop"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BUSINESS WEBSITE -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Business Website
+                    </h3>
+
+                    <p>
+                        Responsive business website designed
+                        with a modern user interface and
+                        mobile-friendly layout.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>React.js</span>
+                        <span>CSS</span>
+                        <span>Vite</span>
+                        <span>Responsive Design</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/anjumpatel725-boop"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PORTFOLIO -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Portfolio Website
+                    </h3>
+
+                    <p>
+                        Personal developer portfolio showcasing
+                        technical skills, projects, education
+                        and professional experience.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/anjumpatel725-boop/portfolio_website"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CURRENCY -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Currency Converter
+                    </h3>
+
+                    <p>
+                        Real-time currency conversion application
+                        using JavaScript and an external API.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>JavaScript</span>
+                        <span>API</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/anjumpatel725-boop"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MOOD MUSIC -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Mood Music Suggestion Platform
+                    </h3>
+
+                    <p>
+                        Python-based application that suggests
+                        music recommendations based on the
+                        user's mood.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Python</span>
+                        <span>Recommendation</span>
+                        <span>Logic</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/anjumpatel725-boop"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IOT -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Self-Driving Car using IoT
+                    </h3>
+
+                    <p>
+                        Autonomous car project using Raspberry Pi
+                        and sensors to demonstrate IoT and
+                        embedded system concepts.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>IoT</span>
+                        <span>Raspberry Pi</span>
+                        <span>Sensors</span>
+                        <span>Embedded Systems</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/anjumpatel725-boop"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+
+    <section id="education" class="section section-dark">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    MY ACADEMIC JOURNEY
+                </p>
+
+                <h2>
+                    <span>Education</span>
+                </h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            Expected 2028
+                        </span>
+
+                        <h3>
+                            B.Tech Computer Science and Engineering
+                        </h3>
+
+                        <h4>
+                            Dr. Daulatrao Aher College of Engineering, Karad
+                        </h4>
+
+                        <p>
+                            Minor: Electronics & Telecommunication Engineering
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            2025
+                        </span>
+
+                        <h3>
+                            Diploma in Electronics and Telecommunication Engineering
+                        </h3>
+
+                        <h4>
+                            Government Polytechnic Karad
+                        </h4>
+
+                        <p>
+                            Percentage: <strong>84.94%</strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTERNSHIP
+    ========================== -->
+
+    <section id="internship" class="section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    PROFESSIONAL EXPERIENCE
+                </p>
+
+                <h2>
+                    Intern<span>ships</span>
+                </h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <div class="experience-grid">
+
+                <article class="experience-card reveal">
+
+                    <div class="experience-header">
+
+                        <div class="experience-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <span>
+                            Jun 2026 – Present
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Full Stack Java Developer Intern
+                    </h3>
+
+                    <h4>
+                        The Developers Arena
+                    </h4>
+
+                    <p class="experience-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Remote
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Enrolled in a 6-month self-paced
+                            internship focused on Full Stack
+                            Java Development.
+                        </li>
+
+                        <li>
+                            Learning frontend-backend integration,
+                            Java development and real-world
+                            development workflows.
+                        </li>
+
+                        <li>
+                            Completing technical assignments
+                            and project-based tasks.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+                <article class="experience-card reveal">
+
+                    <div class="experience-header">
+
+                        <div class="experience-icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+
+                        <span>
+                            Jun 2024 – Jul 2024
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        IoT & Embedded Systems Intern
+                    </h3>
+
+                    <h4>
+                        Gajanan Batteries, Satara
+                    </h4>
+
+                    <p class="experience-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Satara, Maharashtra
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Completed 6-week industrial training
+                            in IoT and Embedded Systems using Arduino.
+                        </li>
+
+                        <li>
+                            Worked with embedded hardware,
+                            sensors and IoT applications.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CERTIFICATIONS
+    ========================== -->
+
+    <section id="certifications" class="section section-dark">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    CONTINUOUS LEARNING
+                </p>
+
+                <h2>
+                    Certifi<span>cations</span>
+                </h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <div class="certifications-grid">
+
+                <div class="cert-card reveal">
+
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Generative AI Fundamentals
+                        </h3>
+
+                        <p>
+                            IBM SkillsBuild
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cert-card reveal">
+
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Artificial Intelligence Fundamentals
+                        </h3>
+
+                        <p>
+                            IBM SkillsBuild
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cert-card reveal">
+
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Software Engineering and Agile Software Development
+                        </h3>
+
+                        <p>
+                            Infosys Springboard
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cert-card reveal">
+
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Agile Scrum in Practice
+                        </h3>
+
+                        <p>
+                            Infosys Springboard
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cert-card reveal">
+
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Cloud Technologies
+                        </h3>
+
+                        <p>
+                            Infosys Springboard
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cert-card reveal">
+
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Object-Oriented Programming using Python
+                        </h3>
+
+                        <p>
+                            Infosys Springboard
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOFT SKILLS
+    ========================== -->
+
+    <section class="section soft-section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    BEYOND TECHNICAL SKILLS
+                </p>
+
+                <h2>
+                    Soft <span>Skills</span>
+                </h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <div class="soft-skills reveal">
+
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Problem Solving
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-bolt"></i>
+                    Quick Learning
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-comments"></i>
+                    Communication
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    Adaptability
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-people-group"></i>
+                    Teamwork
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    LET'S CONNECT
+                </p>
+
+                <h2>
+                    Get In <span>Touch</span>
+                </h2>
+
+                <div class="heading-line"></div>
+
+                <p class="heading-description">
+                    Looking for software development opportunities,
+                    internships and meaningful projects.
+                </p>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <a
+                    href="mailto:anjumpatel725@gmail.com"
+                    class="contact-card reveal">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Email</span>
+
+                        <strong>
+                            anjumpatel725@gmail.com
+                        </strong>
+
+                    </div>
+
+                </a>
+
 
                 <a
                     href="https://github.com/anjumpatel725-boop"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                    class="contact-card reveal">
 
-                    <i class="fa-brands fa-github"></i>
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div>
+
+                        <span>GitHub</span>
+
+                        <strong>
+                            anjumpatel725-boop
+                        </strong>
+
+                    </div>
 
                 </a>
+
 
                 <a
                     href="https://www.linkedin.com/in/anjum-patel-8817b736b"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                    class="contact-card reveal">
 
-                    <i class="fa-brands fa-linkedin"></i>
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+
+                    <div>
+
+                        <span>LinkedIn</span>
+
+                        <strong>
+                            Anjum Patel
+                        </strong>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-cta reveal">
+
+                <h3>
+                    Let's Build Something Great Together.
+                </h3>
+
+                <p>
+                    Open to software engineering internships,
+                    development opportunities and collaborative projects.
+                </p>
+
+                <a
+                    href="mailto:anjumpatel725@gmail.com"
+                    class="btn btn-primary">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send Me an Email
 
                 </a>
 
@@ -1599,673 +1474,71 @@
 
         </div>
 
-    </footer>
+    </section>
 
+</main>
 
-    <!-- Back to top -->
 
-    <button
-        id="backToTop"
-        class="back-to-top"
-        aria-label="Back to top">
-
-        <i class="fa-solid fa-arrow-up"></i>
-
-    </button>
-
-
-    <!-- JavaScript -->
-
-    <script src="script.js"></script>
-
-</body>
-
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Anjum Patel | Full Stack Java Developer</title>
-
-<link rel="stylesheet" href="style.css">
-
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-</head>
-
-
-<body>
-
-
-<header>
-
-<nav>
-
-<h2 class="logo">
-Anjum.dev
-</h2>
-
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#skills">Skills</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#education">Education</a></li>
-
-<li><a href="#internship">Internship</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-
-</nav>
-
-</header>
-
-
-
-
-
-<!-- Hero -->
-
-<section id="home" class="hero">
-
-
-<div class="hero-text">
-
-
-<h1>
-
-Hello, I'm 
-
-<span>
-Anjum Patel
-</span>
-
-</h1>
-
-
-<h2>
-Full Stack Java Developer
-</h2>
-
-
-
-<p>
-
-Computer Science Engineering student passionate about
-building scalable enterprise applications using Java,
-Spring Boot, React.js and Microservices.
-
-</p>
-
-
-
-<a href="#contact" class="btn">
-Contact Me
-</a>
-
-
-
-</div>
-
-
-
-<div class="profile">
-
-<img src="profile.jpeg" alt="profile">
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- About -->
-
-
-<section id="about">
-
-
-<h2>
-Professional Summary
-</h2>
-
-
-<p>
-
-Computer Science Engineering student with hands-on experience
-in Full Stack Java Development, React.js, Spring Boot,
-Microservices, Docker, PostgreSQL, CI/CD and enterprise
-application development.
-
-Passionate about software engineering, scalable systems
-and modern web technologies.
-
-</p>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- Skills -->
-
-
-<section id="skills">
-
-
-<h2>
-Technical Skills
-</h2>
-
-
-
-<div class="skills-container">
-
-
-
-<div class="card">
-
-<h3>
-Programming
-</h3>
-
-<p>
-
-Java<br>
-JavaScript<br>
-Python<br>
-C++<br>
-C<br>
-SQL
-
-</p>
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-Frontend
-</h3>
-
-<p>
-
-HTML5<br>
-CSS3<br>
-React.js<br>
-React Hooks<br>
-React Router<br>
-Responsive Design<br>
-Flexbox<br>
-CSS Grid
-
-</p>
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-Backend
-</h3>
-
-<p>
-
-Spring Boot<br>
-Spring MVC<br>
-Spring Security<br>
-REST APIs<br>
-JWT<br>
-Hibernate<br>
-Microservices
-
-</p>
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-Database & DevOps
-</h3>
-
-<p>
-
-PostgreSQL<br>
-MySQL<br>
-MongoDB<br>
-Redis<br>
-Git<br>
-Docker<br>
-Jenkins<br>
-Kubernetes Basics
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- Projects -->
-
-
-<section id="projects">
-
-
-<h2>
-Major Projects
-</h2>
-
-
-<div class="projects-container">
-
-
-
-<div class="project-card">
-
-<h3>
-Industry-Ready Enterprise Platform
-</h3>
-
-<p>
-
-Enterprise application using Spring Boot,
-React.js, PostgreSQL and Microservices.
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-<h3>
-Real-Time Analytics Dashboard
-</h3>
-
-<p>
-
-Real-time data visualization dashboard
-using React.js and REST APIs.
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-<h3>
-ERP System
-</h3>
-
-<p>
-
-Enterprise Resource Planning system with
-authentication and database integration.
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-<h3>
-Microservices Social Media Platform
-</h3>
-
-<p>
-
-Distributed application using Spring Boot,
-JWT and Docker.
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-<h3>
-E-Commerce Backend System
-</h3>
-
-<p>
-
-Secure backend APIs using Spring Boot,
-Hibernate and PostgreSQL.
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-<h3>
-Modern Business Website
-</h3>
-
-<p>
-
-Responsive React.js business website
-with modern UI design.
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- Education -->
-
-
-<section id="education">
-
-
-<h2>
-Education
-</h2>
-
-
-
-<div class="education-container">
-
-
-
-<div class="education-card">
-
-
-<h3>
-B.Tech Computer Science & Engineering
-</h3>
-
-
-<p>
-Expected 2028
-</p>
-
-
-<p>
-Dr. Daulatrao Aher College of Engineering, Karad
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="education-card">
-
-
-<h3>
-Diploma in Electronics & Telecommunication Engineering
-</h3>
-
-
-<p>
-2025 | 84.94%
-</p>
-
-
-<p>
-Government Polytechnic Karad
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- Internship -->
-
-
-<section id="internship">
-
-
-<h2>
-Internship Experience
-</h2>
-
-
-
-<div class="internship-container">
-
-
-
-
-
-<div class="internship-card">
-
-
-<h3>
-Full Stack Java Developer Intern
-</h3>
-
-
-<h4>
-The Developers Arena
-</h4>
-
-
-<p>
-June 2026 - December 2026
-</p>
-
-
-<p>
-
-Developed frontend, backend,
-microservices and enterprise applications
-using modern technologies.
-
-Worked with Spring Boot, React.js,
-REST APIs and databases.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="internship-card">
-
-
-<h3>
-IoT & Embedded Systems Intern
-</h3>
-
-
-<h4>
-Gajanan Batteries, Satara
-</h4>
-
-
-<p>
-June 2024 - July 2024 (2 Months)
-</p>
-
-
-<p>
-
-Completed a 6-week industrial internship
-in IoT and Embedded Systems using Arduino.
-
-Gained hands-on experience in embedded
-systems, IoT concepts and Arduino projects.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- Contact -->
-
-
-<section id="contact">
-
-
-<h2>
-Contact
-</h2>
-
-
-<p>
-📧 Email: anjumpatel725@gmail.com
-</p>
-
-
-<p>
-💻 GitHub:
-github.com/anjumpatel725-boop
-</p>
-
-
-<p>
-🔗 LinkedIn:
-linkedin.com/in/anjum-patel-8817b736b
-</p>
-
-
-</section>
-
-
-
-
-
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
-<p>
+    <div class="container footer-content">
 
-© 2026 Anjum Patel | Full Stack Java Developer
+        <a href="#home" class="logo">
+            Anjum<span>.dev</span>
+        </a>
 
-</p>
+        <p>
+            © 2026 Anjum Patel. All Rights Reserved.
+        </p>
+
+        <div class="footer-social">
+
+            <a
+                href="https://github.com/anjumpatel725-boop"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/anjum-patel-8817b736b"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+            </a>
+
+        </div>
+
+    </div>
 
 </footer>
 
 
+<!-- Back To Top -->
+
+<button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+```
 
 </body>
 
->>>>>>> 268333c292bcde33e258179063d3a50aab341277
 </html>
