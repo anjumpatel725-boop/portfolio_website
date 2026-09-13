@@ -29,6 +29,15 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <script>
+    const savedTheme =
+        localStorage.getItem("theme") || "dark";
+
+    document.documentElement.setAttribute(
+        "data-theme",
+        savedTheme
+    );
+</script>
 
 </head>
 
@@ -224,7 +233,7 @@
                     <div class="profile-circle">
 
                         <img
-                            src="profile.jpeg"
+                            src="profile.jpg"
                             alt="Anjum Patel">
 
                     </div>
@@ -1661,7 +1670,7 @@
 
     <!-- JAVASCRIPT -->
 
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 
 </body>
 
